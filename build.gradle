@@ -1,13 +1,5 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        gradlePluginPortal()
-        maven { url = "https://maven.fabricmc.net/" }
-    }
-}
-
 plugins {
-    id 'fabric-loom' version '1.7-SNAPSHOT'
+    id 'fabric-loom' version '1.7.4'
     id 'org.ajoberstar.grgit' version '5.2.1'
 }
 
