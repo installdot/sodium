@@ -12,9 +12,11 @@ repositories {
     maven { url = "https://maven.fabricmc.net/" }
 }
 
-minecraft {
-    refmapName = "mixins.sodium.refmap.json"
-    accessWidener = file("src/main/resources/sodium.accesswidener")
+loom {
+    mixin {
+        defaultRefmapName = "mixins.sodium.refmap.json"
+    }
+    accessWidenerPath = file("src/main/resources/sodium.accesswidener")
 }
 
 dependencies {
